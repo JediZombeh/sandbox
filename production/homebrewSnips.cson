@@ -1,0 +1,256 @@
+
+############################################
+# DICK'S SPORTING GOODS PHOENIX EMAIL SNIPPETS
+# version:	1.00 [homebrew]
+# author:		Steven Till
+############################################
+
+
+'.text.html':
+
+  # 'phx MODULE-NAME':
+  #   'prefix': 'phx-MODULE-NAME'
+  #   'body': """
+  #
+  #
+  #
+  #
+  #
+  #   """
+
+# TEMPLATING SNIPS
+
+  'Comment Block':
+    'prefix': 'comment'
+    'body': """
+    <!--#$1-->
+    $2
+    <!--/END$1-->
+    """
+
+
+  'One-Column Row':
+    'prefix': 'temp-oneColumn'
+    'body': """
+    <tr><td class="one-column"><table width="100%"><tr><td class="inner contents" style="background-color: #FFFFFF;">
+        [PLACE CONTENT HERE]
+    </td></tr></table></td></tr><tr><td class="one-column"><table width="100%"><tr><td class="spacer">&nbsp;</td></tr></table></td></tr>
+    """
+
+
+  'Two-Column Row':
+    'prefix': 'temp-twoColumn'
+    'body': """
+    <tr><td class="two-column" style="background-color: #FFFFFF;">
+        <!--[if (gte mso 9)|(IE)]><table width="100%"><tr><td width="50%" valign="top"><![endif]-->
+        <div class="column"><table width="100%"><tr><td class="inner"><table class="contents"><tr><td>
+            [PLACE CONTENT HERE]
+        </td></tr></table></td></tr></table></div>
+        <!--[if (gte mso 9)|(IE)]></td><td width="50%" valign="top"><![endif]-->
+        <div class="column"><table width="100%"><tr><td class="inner"><table class="contents"><tr><td>
+            [PLACE CONTENT HERE]
+        </td></tr></table></td></tr></table></div>
+        <!--[if (gte mso 9)|(IE)]></td> </tr> </table><![endif]-->
+    </td></tr><tr><td class="one-column"><table width="100%"><tr><td class="spacer">&nbsp;</td></tr></table></td></tr>
+    """
+
+
+  'Three-Column Row':
+    'prefix': 'temp-threeColumn'
+    'body': """
+    <tr><td class="three-column" style="background-color: #FFFFFF;">
+        <!--[if (gte mso 9)|(IE)]><table width="100%"><tr><td width="212" valign="top"><![endif]-->
+        <div class="column"><table width="100%"><tr><td class="inner"><table class="contents"><tr><td>
+            [PLACE CONTENT HERE]
+        </td></tr></table></td></tr></table></div>
+        <!--[if (gte mso 9)|(IE)]></td><td width="212" valign="top"><![endif]-->
+        <div class="column"><table width="100%"><tr><td class="inner"><table class="contents"><tr><td>
+            [PLACE CONTENT HERE]
+        </td></tr></table></td></tr></table></div>
+        <!--[if (gte mso 9)|(IE)]></td><td width="212" valign="top"><![endif]-->
+        <div class="column"><table width="100%"><tr><td class="inner"><table class="contents"><tr><td>
+            [PLACE CONTENT HERE]
+        </td></tr></table></td></tr></table></div>
+        <!--[if (gte mso 9)|(IE)]></td> </tr></table><![endif]-->
+    </td></tr><tr><td class="one-column"><table width="100%"><tr><td class="spacer">&nbsp;</td></tr></table></td></tr>
+    """
+
+
+  'Six-Block Grid':
+    'prefix': 'temp-sixBlockGrid'
+    'body': """
+    <tr><td class="three-column" style="background-color: #FFFFFF;">
+        <!--[if (gte mso 9)|(IE)]><table width="100%"><tr><td width="212" valign="top"><![endif]-->
+        <div class="column"><table width="100%"> <tr><td class="inner contents">
+            [PLACE CONTENT HERE]
+        </td></tr></table></div>
+        <!--[if (gte mso 9)|(IE)]></td><td width="212" valign="top"><![endif]-->
+        <div class="column"><table width="100%"> <tr><td class="inner contents">
+            [PLACE CONTENT HERE]
+        </td></tr></table></div>
+        <!--[if (gte mso 9)|(IE)]></td><td width="212" valign="top"><![endif]-->
+        <div class="column"><table width="100%"> <tr><td class="inner contents">
+            [PLACE CONTENT HERE]
+        </td></tr></table></div>
+        <!--[if (gte mso 9)|(IE)]></td></tr><tr><td width="212" valign="top"><![endif]-->
+        <div class="column"><table width="100%"> <tr><td class="inner contents">
+            [PLACE CONTENT HERE]
+        </td></tr></table></div>
+        <!--[if (gte mso 9)|(IE)]></td><td width="212" valign="top"><![endif]-->
+        <div class="column"><table width="100%"> <tr><td class="inner contents">
+            [PLACE CONTENT HERE]
+        </td></tr></table></div>
+        <!--[if (gte mso 9)|(IE)]></td><td width="212" valign="top"><![endif]-->
+        <div class="column"><table width="100%"> <tr><td class="inner contents">
+            [PLACE CONTENT HERE]
+        </td></tr></table></div>
+        <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+    </td></tr><tr><td class="one-column"><table width="100%"><tr><td class="spacer">&nbsp;</td></tr></table></td></tr>
+    """
+
+
+  'Full-Width Banner':
+    'prefix': 'temp-fullWidthBanner'
+    'body': """
+    <tr><td class="full-width-image">
+        <a href="https://bannerLink.com" target="blank">
+            <img src="http://via.placeholder.com/640x100?text=Full-Width+Banner" alt="full-width banner fpo text" width="640" height="auto">
+        </a>
+    </td></tr><tr><td class="one-column"><table width="100%"><tr><td class="spacer">&nbsp;</td></tr></table></td></tr>
+    """
+
+
+  'Banner':
+    'prefix': 'temp-banner'
+    'body': """
+    <tr><td class="full-padded-image">
+        <a href="https://bannerLink.com" target="blank">
+            <img src="http://via.placeholder.com/640x100?text=Full-Width+Banner" alt="full-width banner fpo text" width="608" height="auto">
+        </a>
+    </td></tr><tr><td class="one-column"><table width="100%"><tr><td class="spacer">&nbsp;</td></tr></table></td></tr>
+    """
+
+
+  'Button [solid]':
+    'prefix': 'btn-solid'
+    'body': """
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"><tr><td>
+      <table border="0" cellspacing="0" cellpadding="0" align="center"><tr>
+          <td align="center" style="border-radius: 3px;background-color: #212121;"><!--[if mso]>&nbsp;<![endif]--><a href="https://ctaLink.com" target="_blank" class="btn-solid" style="color: #FFFFFF; border-color: #212121;">
+                  I am a button
+      </a><!--[if mso]>&nbsp;<![endif]--></td></tr></table>
+    </td></tr> </table>
+    """
+
+
+  'Button Small [solid]':
+    'prefix': 'btn-solid-small'
+    'body': """
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"><tr><td>
+      <table border="0" cellspacing="0" cellpadding="0" align="center"><tr>
+          <td align="center" style="border-radius: 3px;" bgcolor="#212121"><!--[if mso]>&nbsp;<![endif]--><a href="https://ctaLink.com" target="_blank" class="btn-solid-small" style="color: #ffffff; border-color: #212121;">
+                  I am a button
+      </a><!--[if mso]>&nbsp;<![endif]--></td></tr></table>
+    </td></tr></table>
+    """
+
+
+  'Button [ghost]':
+    'prefix': 'btn-ghost'
+    'body': """
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"><tr><td>
+      <table border="0" cellspacing="0" cellpadding="0" align="center"><tr>
+          <td align="center" style="border-radius: 3px; background-color: inherit;"><!--[if mso]>&nbsp;<![endif]--><a href="https://ctaLink.com" target="_blank" class="btn-ghost" style="color: #212121; border-color: #212121;">
+                  I am a button
+      </a><!--[if mso]>&nbsp;<![endif]--></td></tr></table>
+    </td></tr></table>
+    """
+
+
+  'Button Small [ghost]':
+    'prefix': 'btn-ghost-small'
+    'body': """
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"><tr><td>
+      <table border="0" cellspacing="0" cellpadding="0" align="center"><tr>
+          <td align="center" style="border-radius: 3px;background-color: inherit;"><!--[if mso]>&nbsp;<![endif]--><a href="https://ctaLink.com" target="_blank" class="btn-ghost-small" style="color: #212121; border-color: #212121;">
+                  I am a button
+      </a><!--[if mso]>&nbsp;<![endif]--></td></tr></table>
+    </td></tr></table>
+    """
+
+
+  'Spacer':
+    'prefix': 'spacer'
+    'body': """
+    <!--#Spacer-->
+    <tr><td class="one-column"><table width="100%"><tr><td class="spacer">&nbsp;</td></tr></table></td></tr>
+    <!--/END Spacer-->
+    """
+
+
+
+
+
+
+
+
+
+  'Homebrew Boilerplate':
+    'prefix': 'temp-boilerplate'
+    'body': """
+    <!DOCTYPE html>
+    <!--DICK'S Sporting Goods :: phoenix homebrew v1.00-->
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+    <head>
+      <title></title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!--<![endif]-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title></title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+      <!--Load brand fonts here-->
+      <!---->
+      <!--/Load brand fonts-->
+      <!--Delete the below linked stylesheets prior to production-->
+      <link rel="stylesheet" type="text/css" href="./css/codex.css" />
+      <link rel="stylesheet" type="text/css" href="./css/brand.css" />
+      <!--[if gte mso 9]><xml><o:OfficeDocumentSettings> <o:AllowPNG/> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml><![endif]-->
+      <!--[if (gte mso 9)|(IE)]><style type="text/css"> table {border-collapse: collapse;} </style> <![endif]-->
+      <style media="screen">
+        /* Insert codex styles here */
+      </style>
+      <style media="screen">
+        /* Insert brand styles here */
+      </style>
+      <style media="screen">/*iOS blue link fix*/
+        a[x-apple-data-detectors] {color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+      </style>
+    </head>
+    <body style="margin:0;padding:0;min-width:100%;background-color:#FFFFFF;">
+      <!--[if gte mso 10]><style> /* Style Definitions for MSO 2010 */ table.MsoNormalTable, p, span, div, table, tr, td, th, a { mso-style-priority:99; font-family:"Arial","sans-serif"; } </style><![endif]-->
+      <center class="wrapper"><div class="webkit"><!--[if (gte mso 9)|(IE)]><table width="640" align="center"><tr><td><![endif]--><table class="outer" align="center">
+
+    <!--### EMAIL BODY #############-->
+
+
+
+
+    $1
+
+
+
+    <!--/// END EMAIL BODY /////////////-->
+          </table>
+          <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+        </div>
+      </center>
+    </body>
+    </html>
+    """
+
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# https://atom.io/docs/latest/using-atom-basic-customization#cson
