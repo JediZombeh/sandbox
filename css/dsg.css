@@ -1,52 +1,102 @@
 /* Brand Font Overrides */
 
 .h1, .h2, .h3 {
-  font-family: 'DINPro-Black', Arial, Helvetica, sans-serif !important;
+  font-family: 'DINPro-Black', Arial, Helvetica, sans-serif!important;
   font-weight: 900;
 }
 
 .btn-ghost, .btn-ghost-small, .btn-solid, .btn-solid-small {
-  font-family: 'DINPro-Medium', Arial, Helvetica, sans-serif !important;
+  font-family: 'DINPro-Medium', Arial, Helvetica, sans-serif!important;
   font-weight: bold;
 }
 
 .flashPromoSmall {
-  font-family: 'DINPro-Light', Arial, Helvetica, sans-serif !important;
-  font-size: 32px !important;
+  font-family: 'DINPro-Light', Arial, Helvetica, sans-serif!important;
+  font-size: 32px!important;
   font-weight: 300;
   line-height: 2rem;
   Margin-bottom: 16px;
 }
 
 .flashPromo {
-  font-family: 'DINPro-Black', Arial, Helvetica, sans-serif !important;
-  font-size: 40px !important;
+  font-family: 'DINPro-Black', Arial, Helvetica, sans-serif!important;
+  font-size: 40px!important;
   font-weight: 900;
   line-height: 1rem;
   Margin-bottom: 16px;
 }
 
+.freeShippng {
+  font-family: 'DINPro-Medium', Arial, Helvetica, sans-serif!important;
+  font-weight: normal;
+  Margin-bottom:12px;
+  Margin-top:12px;
+}
+
+/* Navigation */
+.navbar {
+  text-align: center;
+  font-size: 0;
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 16px 0;
+  text-align: center;
+}
+
+.navbar .column-nav {
+  display: inline-block;
+  max-width: 320px;
+  text-align: center;
+  vertical-align: top;
+  width: auto;
+}
+
+.navbar .contents {
+  font-size: 14px;
+  padding: 0 8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*End Navigation*/
+
 .pricing {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif!important;
   font-weight: 700;
   line-height: 2rem;
 }
 
 .productInfo {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif!important;
   font-size: 16px;
   font-weight: 500;
 }
 
 .promo {
-  font-family: 'DINPro-Black', Arial, Helvetica, sans-serif !important;
-  font-size: 20px !important;
+  font-family: 'DINPro-Black', Arial, Helvetica, sans-serif!important;
+  font-size: 20px!important;
   font-weight: 900;
   line-height: 2rem;
   text-transform: uppercase;
 }
 
 .valueCopy {
-  font-family: 'DINPro-Medium', Arial, Helvetica, sans-serif !important;
-  font-weight: normal !important;
+  font-family: 'DINPro-Medium', Arial, Helvetica, sans-serif!important;
+  font-weight: normal!important;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+  .navbar .column-nav {
+    text-align: center!important;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 640px) {
+  .navbar .column-nav {
+    width: auto;
+  }
 }

@@ -29,6 +29,27 @@
     """
 
 
+  'Horizontal Rule [dark]':
+    'prefix': 'hr-dark'
+    'body': """
+    <hr style="background-color:#404040;border:0;color:#404040;height:1px;width:90%;padding:0;" />
+    """
+
+
+  'Horizontal Rule [light]':
+    'prefix': 'hr-dark'
+    'body': """
+    <hr style="background-color:#404040;border:0;color:#404040;height:1px;width:90%;padding:0;" />
+    """
+
+
+  'Horizontal Rule [spacer]':
+    'prefix': 'spacer'
+    'body': """
+    <!--spacer--><hr style="height:16px; background-color:inherit;border:0;color:inherit;margin:0;width:90%;padding:0;" />
+    """
+
+
   'One-Column Row':
     'prefix': 'temp-oneColumn'
     'body': """
@@ -179,13 +200,6 @@
     """
 
 
-  'Spacer':
-    'prefix': 'spacer'
-    'body': """
-    <!--#Spacer-->
-    <tr><td class="one-column"><table width="100%"><tr><td class="spacer">&nbsp;</td></tr></table></td></tr>
-    <!--/END Spacer-->
-    """
 
 
 
